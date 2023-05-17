@@ -44,14 +44,14 @@ let sorted = arr.sort((a, b) => {
              arr.filter(num => {num === a})
                 .length - arr.filter(num => {num === b})
                 .length
-})
+});
 
-let number = sorted[sorted.length - 1]
-let newArr = [number]
+let number = sorted[sorted.length - 1];
+let newArr = [number];
 
 let sortedArray = arr.filter(num => {
     return num !== number
-})
+});
 
 console.log(sortedArray);
 console.log(newArr);
@@ -93,7 +93,7 @@ function calc(a, b, op) {
         default :
             return a + b;
     }
-}
+};
 
 // завдання 7
 
