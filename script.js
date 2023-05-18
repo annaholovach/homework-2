@@ -66,16 +66,18 @@ if (a <= 0 || b <= 0 || c <= 0 || isNaN(a) || isNaN(b) || isNaN(c)) {
     alert ('Incorrect data');
 };
 
-let p = (a + b + c) / 2;
-let s = Math.sqrt(p *(p - a) * (p - b) * (p - c));
+if (a > 0 && b > 0 && c > 0) {
+    let p = (a + b + c) / 2;
+    let s = Math.sqrt(p *(p - a) * (p - b) * (p - c));
 
-console.log('Площа трикутника:' + s.toFixed(3));
+    console.log('Площа трикутника:' + s.toFixed(3));
 
-let isRightTriangle =  a ** 2 + b ** 2 == c ** 2
-|| a ** 2 + c ** 2 == b ** 2
-|| b ** 2 + c ** 2 == a ** 2;
+    let isRightTriangle =  a ** 2 + b ** 2 == c ** 2
+    || a ** 2 + c ** 2 == b ** 2
+    || b ** 2 + c ** 2 == a ** 2;
 
-console.log ('трикутник ' + (isRightTriangle ? 'прямокутний' : 'не прямокутний'));
+    console.log ('трикутник ' + (isRightTriangle ? 'прямокутний' : 'не прямокутний'));
+};
 
 // завдання 6
 
